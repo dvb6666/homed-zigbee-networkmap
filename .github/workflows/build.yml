@@ -21,3 +21,18 @@ jobs:
       with:
         name: homed-zigbee-networkmap
         path: ./dist/homed-zigbee-networkmap.js
+  release:
+    if: ${{ startsWith(github.ref, 'refs/tags/') }}
+    needs: build
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v4
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: ./homed-zigbee-networkmap/homed-zigbee-networkmap.js
+        asset_name: homed-zigbee-networkmap
+        tag: ${{ github.ref }}
