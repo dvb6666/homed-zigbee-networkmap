@@ -2,8 +2,8 @@ name: Build
 permissions: {}
 on:
   push:
-#    paths-ignore:
-#    - '**.md'
+    paths-ignore:
+    - '**.md'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,5 +34,5 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: ./homed-zigbee-networkmap/homed-zigbee-networkmap.js
-        asset_name: homed-zigbee-networkmap
+        asset_name: homed-zigbee-networkmap.js
         tag: ${{ github.ref }}
