@@ -22,7 +22,7 @@ jobs:
         name: homed-zigbee-networkmap
         path: ./dist/homed-zigbee-networkmap.js
     - name: Validate HACS
-      uses: "hacs/action@main"
+      uses: hacs/action@main
       with:
         category: "plugin"
   release:
