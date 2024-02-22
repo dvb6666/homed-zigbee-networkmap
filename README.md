@@ -18,7 +18,7 @@ In `configuration.yaml` of the Home Assistant installation:
 ``` yaml
 mqtt:
   sensor:
-    - name: Homed Zigbee Networkmap
+    - name: HOMEd Zigbee Networkmap
       object_id: homed_zigbee_networkmap
       state_topic: homed/status/zigbee
       # again, if you change state_topic of HOMEd Zigbee, change json_attributes_topic accordingly
