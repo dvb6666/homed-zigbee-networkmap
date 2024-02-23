@@ -1,8 +1,7 @@
 # homed-zigbee-networkmap
 
-
 [Custom Card](https://developers.home-assistant.io/docs/frontend/custom-ui/custom-card) for [Home Assistant](https://www.home-assistant.io/) to show the [HOMEd Zigbee](https://wiki.homed.dev/page/ZigBee) network map with [vue-d3-network](https://github.com/emiliorizzo/vue-d3-network/).\
-Clone of [zigbee2mqtt-networkmap](https://github.com/azuwis/zigbee2mqtt-networkmap)
+(clone of [zigbee2mqtt-networkmap](https://github.com/azuwis/zigbee2mqtt-networkmap) adapted for [HOMEd Zigbee](https://wiki.homed.dev/page/ZigBee))
 
 ## [Demo](https://dvb6666.github.io/homed-zigbee-networkmap/)
 
