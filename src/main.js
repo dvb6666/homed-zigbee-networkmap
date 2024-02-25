@@ -21,9 +21,14 @@ customElements.whenDefined('homed-zigbee-networkmap').then(() => {
             name: 'Kitchen Smoke Sensor',
             networkAddress: 63355
         }, {
+            name: 'Lamp',
+            networkAddress: 2797,
+            removed: true
+        }, {
             logicalType: 2,
             name: 'Balcony Temperature Sensor',
-            networkAddress: 30564
+            networkAddress: 30564,
+            removed: false
         }, {
             logicalType: 2,
             name: 'Childroom Temperature Sensor',

@@ -167,7 +167,7 @@ export default {
         this.init_failed = true
         return
       }
-      this.nodes = this.merge(this.nodes, attr.devices, d => d.id, d => d.networkAddress, d => {
+      this.nodes = this.merge(this.nodes, attr.devices.filter(e => e.removed !== true), d => d.id, d => d.networkAddress, d => {
         return {
           id: d.networkAddress,
           name: d.logicalType === 0 ? ' ' : d.name,
