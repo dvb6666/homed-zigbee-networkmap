@@ -49,7 +49,7 @@ Make sure to use the same name of the sensor defined under `configuration.yaml`,
 
 ### Frontend setup (YAML mode)
 
-Download [`homed-zigbee-networkmap.js`](https://github.com/dvb6666/homed-zigbee-networkmap/releases/download/0.1.2/homed-zigbee-networkmap.js) and put it into `<config-directory>/www/` directory.
+Download `homed-zigbee-networkmap.js` file from the [latest release](https://github.com/dvb6666/homed-zigbee-networkmap/releases/latest) and put it into `<config-directory>/www/` directory.
 
 Enable [Dashboard YAML mode](https://www.home-assistant.io/dashboards/dashboards/#using-yaml-for-the-default-dashboard).
 

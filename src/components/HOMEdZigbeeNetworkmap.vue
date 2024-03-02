@@ -174,7 +174,7 @@ export default {
           _cssClass: d.logicalType === 0 ? 'coordinator' : d.logicalType === 1 ? 'router' : ''
         }
       })
-      const nodes = attr.devices.map(e => e.networkAddress)
+      const nodes = attr.devices.filter(e => e.removed !== true).map(e => e.networkAddress)
       this.links = this.merge(
         this.links,
         attr.devices.filter(e => e.neighbors != null).flatMap(e => e.neighbors.filter(n => nodes.includes(n.networkAddress)).map(n => ({ sourceIeeeAddr: e.networkAddress, targetIeeeAddr: n.networkAddress, lqi: n.linkQuality }))),
